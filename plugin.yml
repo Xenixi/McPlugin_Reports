@@ -1,0 +1,21 @@
+name: Reports
+version: 1.0
+main: com.xenixi.conquermc.plugins.reports.Reports
+author: Kobe McManus
+
+commands:
+    report:
+        description: Report a player for violation of server rules.
+        aliases: []
+        default: false
+        permission: reports.send
+    reports:
+        description: View all player reports.
+        aliases: []
+        default: false
+        permission: reports.receive
+permissions:
+    reports.send:
+      description: Allows player to send reports with /report <player> <reason>
+    reports.receive:
+      description: Allows staff members to view player reports.
